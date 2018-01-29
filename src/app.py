@@ -1,5 +1,8 @@
-__author__ = 'technokowski'
+__author__ = "technokowski"
 
+import requests
+
+request = requests.get("http://www.google.com")
 
 def ask_age():
     age = input("Enter your age: ")
@@ -13,5 +16,6 @@ def prompt_user_and_calculate_age():
     seconds_lived = calcuate_seconds_from_years(age)
     print("You have lived for {} seconds".format(seconds_lived))
 
-prompt_user_and_calculate_age()
+#prompt_user_and_calculate_age()
 
+print(request.content)
