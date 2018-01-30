@@ -1,7 +1,8 @@
 __author__ = "technokowski"
 
+# adding a comment
 
- def ask_age():
+def ask_age():
     age = input("Enter your age: ")
     return int(age)
 
